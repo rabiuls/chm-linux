@@ -1,0 +1,144 @@
+object Form5IndexStart: TForm5IndexStart
+  Left = 322
+  Height = 350
+  Top = 236
+  Width = 358
+  HorzScrollBar.Page = 357
+  VertScrollBar.Page = 349
+  ActiveControl = LabeledEdit1
+  Caption = 'Make Index Like Start Page'
+  ClientHeight = 350
+  ClientWidth = 358
+  Position = poScreenCenter
+  object LabeledEdit1: TLabeledEdit
+    Left = 40
+    Height = 23
+    Top = 32
+    Width = 272
+    EditLabel.Left = 40
+    EditLabel.Height = 23
+    EditLabel.Top = 15
+    EditLabel.Width = 74
+    EditLabel.Caption = 'Directory'
+    EditLabel.ParentColor = False
+    ParentColor = False
+    TabOrder = 0
+  end
+  object LabeledEdit2: TLabeledEdit
+    Left = 40
+    Height = 23
+    Top = 80
+    Width = 272
+    EditLabel.Left = 40
+    EditLabel.Height = 23
+    EditLabel.Top = 63
+    EditLabel.Width = 149
+    EditLabel.Caption = 'First Line/ Headline'
+    EditLabel.ParentColor = False
+    ParentColor = False
+    TabOrder = 1
+    Text = 'Index'
+  end
+  object BitBtn1: TBitBtn
+    Left = 207
+    Height = 30
+    Top = 224
+    Width = 75
+    Caption = '&Close'
+    Font.Height = -12
+    NumGlyphs = 0
+    OnClick = BitBtn1Click
+    TabOrder = 2
+  end
+  object LabeledEdit3: TLabeledEdit
+    Left = 40
+    Height = 23
+    Top = 280
+    Width = 272
+    Color = clSilver
+    EditLabel.Left = 40
+    EditLabel.Height = 23
+    EditLabel.Top = 306
+    EditLabel.Width = 78
+    EditLabel.Caption = 'File Saved'
+    EditLabel.ParentColor = False
+    LabelPosition = lpBelow
+    ParentColor = False
+    ReadOnly = True
+    TabOrder = 3
+  end
+  object BitBtn3: TBitBtn
+    Left = 71
+    Height = 30
+    Top = 225
+    Width = 75
+    Caption = 'Save'
+    Font.Height = -12
+    NumGlyphs = 0
+    OnClick = BitBtn3Click
+    TabOrder = 4
+  end
+  object LabeledEdit4: TLabeledEdit
+    Left = 40
+    Height = 23
+    Top = 128
+    Width = 120
+    EditLabel.Left = 40
+    EditLabel.Height = 23
+    EditLabel.Top = 111
+    EditLabel.Width = 185
+    EditLabel.Caption = 'Page Background Colour'
+    EditLabel.ParentColor = False
+    ParentColor = False
+    TabOrder = 5
+    Text = '#C0C0C0'
+  end
+  object LabeledEdit5: TLabeledEdit
+    Left = 40
+    Height = 23
+    Top = 171
+    Width = 120
+    EditLabel.Left = 40
+    EditLabel.Height = 23
+    EditLabel.Top = 154
+    EditLabel.Width = 89
+    EditLabel.Caption = 'Font Colour'
+    EditLabel.ParentColor = False
+    ParentColor = False
+    TabOrder = 6
+    Text = '#000000'
+  end
+  object BitBtn4: TBitBtn
+    Left = 168
+    Height = 21
+    Top = 130
+    Width = 23
+    Caption = '...'
+    Font.Height = -7
+    NumGlyphs = 0
+    OnClick = BitBtn4Click
+    TabOrder = 7
+  end
+  object BitBtn5: TBitBtn
+    Left = 168
+    Height = 21
+    Top = 171
+    Width = 23
+    Caption = '...'
+    Font.Height = -7
+    NumGlyphs = 0
+    OnClick = BitBtn5Click
+    TabOrder = 8
+  end
+  object SaveDialog1: TSaveDialog
+    Title = 'Save file as'
+    DefaultExt = '.html'
+    Filter = 'html file (*.html)|*.html'
+    left = 216
+  end
+  object ColorDialog1: TColorDialog
+    Title = 'Select color'
+    left = 280
+    top = 128
+  end
+end
